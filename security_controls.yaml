@@ -1,0 +1,24 @@
+# security_controls.yaml
+
+OWASP_NIST_recommendations:
+  Spoofing:
+    - "Use strong authentication mechanisms (MFA) - NIST 800-63B"
+    - "Implement secure session handling - OWASP ASVS 2.1"
+    - "Use TLS and proper certificate validation - NIST SP 800-52"
+  Tampering:
+    - "Use digital signatures or MACs to verify integrity - NIST 800-57"
+    - "Ensure database access controls and prevent SQL Injection - OWASP A03"
+    - "Implement server-side validation for input sanitization - OWASP A01"
+  Repudiation:
+    - "Enable logging with cryptographic signing - NIST SP 800-92"
+    - "Ensure application logs are immutable - OWASP ASVS 9.2"
+  InformationDisclosure:
+    - "Use data encryption at rest and in transit - NIST SP 800-175B"
+    - "Minimize excessive API responses - OWASP A06"
+    - "Implement proper access control checks - OWASP ASVS 4.1"
+  DenialOfService:
+    - "Apply rate limiting and throttling - OWASP ASVS 5.3"
+    - "Monitor application behavior for anomalies - NIST SP 800-94"
+  ElevationOfPrivilege:
+    - "Implement least privilege principles - NIST 800-53 AC-6"
+    - "Use strong authorization mechanisms (RBAC/ABAC) - OWASP ASVS 1.3"
